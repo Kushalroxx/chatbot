@@ -1,7 +1,7 @@
 import express from "express"
 import { googleAiControler } from "../controler/googleAi.controler"
 
-const router = express()
+const chatRouter = express()
 
-router.route("/").post(googleAiControler)
-export {router}
+chatRouter.route("/").post(googleAiControler)
+export {chatRouter}
