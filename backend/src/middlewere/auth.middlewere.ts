@@ -8,10 +8,12 @@ export const authMiddlewere = (req:Request,res:Response,next:NextFunction)=>{
     }
     const data = jwt.verify(token,process.env.JWTKEY||"")
     if(!data){
+        return res.status(401).json({message:"invalid token provided please login again first"})
+    }else{
         // @ts-ignore
         req.email = data.email
+        // @ts-ignore
+        req.id = data.id
         next()
-    }else{
-        return res.status(401).json({message:"unauthorized"})
     }
 }

@@ -16,8 +16,8 @@ def Button(
         width=width,
         background=bgColor,
         fg=textColor,
-        font=('Helvetica',bold,"bold"),
-        activebackground=bgColor,
+        font=('Arial',bold,"bold"),
+        activebackground="red",
         activeforeground=textColor,
         border=1,
         command=handleButton

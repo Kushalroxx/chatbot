@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
  
 app.use("/history",authMiddlewere,historyRouter)
-app.use("/chatbot",chatRouter)
+app.use("/chatbot",authMiddlewere,chatRouter)
 app.use("/login",loginRouter)
 
 export {app}
