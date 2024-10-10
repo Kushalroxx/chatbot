@@ -5,7 +5,7 @@ A small project of chatbot build over google LLM with the use of typescript and 
 
 Copy the link of the repo
 ```bash
-git clone https://github.com/kushalroxx/chatbot
+git clone https://github.com/Kushalroxx/chatbot.git
 ```
 
 ### Prerequisites
